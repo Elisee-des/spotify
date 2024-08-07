@@ -6,6 +6,8 @@ import 'package:spotify/common/widgets/button/basic_app_button.dart';
 import 'package:spotify/core/configs/assets/app_images.dart';
 import 'package:spotify/core/configs/assets/app_vectors.dart';
 import 'package:spotify/core/configs/theme/app_colors.dart';
+import 'package:spotify/presentation/auth/pages/signin.dart';
+import 'package:spotify/presentation/auth/pages/signup.dart';
 
 class SignupOrSigninPage extends StatelessWidget {
   const SignupOrSigninPage({super.key});
@@ -80,12 +82,12 @@ class SignupOrSigninPage extends StatelessWidget {
                         flex: 1,
                         child: BasicAppButton(
                           onPressed: (){
-                            // Navigator.push(
-                            //   context,
-                            //   MaterialPageRoute(
-                            //     builder: (BuildContext context)=> SignupPage()
-                            //   )
-                            // );
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (BuildContext context)=>  SignupPage()
+                              )
+                            );
                           },
                           title: 'Register'
                         ),
@@ -95,12 +97,12 @@ class SignupOrSigninPage extends StatelessWidget {
                         flex: 1,
                         child: TextButton(
                           onPressed: (){
-                            //  Navigator.push(
-                            //   context,
-                            //   MaterialPageRoute(
-                            //     builder: (BuildContext context)=> SigninPage()
-                            //   )
-                            // );
+                             Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (BuildContext context)=> SigninPage()
+                              )
+                            );
                           },
                           child: Text(
                             'Sign in',
