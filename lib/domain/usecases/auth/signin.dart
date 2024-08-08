@@ -1,0 +1,16 @@
+import 'package:dartz/dartz.dart';
+import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart';
+import 'package:spotify/core/usecase/usecase.dart';
+import 'package:spotify/data/models/auth/signin_user.dart';
+import 'package:spotify/domain/repository/auth/auth.dart';
+import 'package:spotify/service_locator.dart';
+
+class SigninUseCase implements Usecase<Either, SigninUserReq> {
+
+  @override
+  Future<Either> call({SigninUserReq ? params}) {
+    return sl<AuthRepository>().signin(params!);
+  }
+
+}

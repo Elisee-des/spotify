@@ -11,5 +11,4 @@ class SignupUseCase implements Usecase<Either, CreateUserReq> {
     return sl<AuthRepository>().signup(params!);
   }
 
-
 }
