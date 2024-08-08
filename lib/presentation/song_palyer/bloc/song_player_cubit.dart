@@ -1,6 +1,7 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:spotify/presentation/song_palyer/bloc/song_player_state.dart';
 import 'package:just_audio/just_audio.dart';
+
 class SongPlayerCubit extends Cubit<SongPlayerState> {
 
   AudioPlayer audioPlayer = AudioPlayer();

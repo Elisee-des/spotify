@@ -3,7 +3,6 @@ import 'package:dartz/dartz.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:spotify/data/models/auth/create_user.dart';
 import 'package:spotify/data/models/auth/signin_user.dart';
-import 'package:spotify/domain/entities/auth/user.dart';
 
 
 abstract class AuthFirebaseService {
