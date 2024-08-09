@@ -21,4 +21,9 @@ class AuthRepositoryImpl extends AuthRepository {
   Future<Either> addOrRemoveFavoriteSongs(String songId) async {
     return await sl<SongFirebaseService>().addOrRemoveFavoriteSong(songId);
   }
+  
+  @override
+  Future<Either> getUser() async{
+      return await sl<AuthFirebaseService>().getUser();
+  }
 }
